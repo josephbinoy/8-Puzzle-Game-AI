@@ -48,8 +48,6 @@ def getMoves(board):
         validMoves.append('U')
     return blank_x, blank_y,validMoves
 
-#heuristic function=count of misplaced tiles
-#it can be changed to manhattan distamce later for efficiency
 def h(board):
     sum=0
     for i in range(0,3):
@@ -96,6 +94,7 @@ c=0
 board=getInitialBoard()
 os.system('cls')
 printBoard(board)
+
 while(not goalTest(board)):
     c+=1
     print("  |")
