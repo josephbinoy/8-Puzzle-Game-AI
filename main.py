@@ -1,4 +1,3 @@
-import os
 from Board import *
 
 goal=[['1', '2', '3'],
@@ -72,7 +71,6 @@ def printSolutionSteps(board):
         board=board.parent
 
 board=getInitialBoard()
-os.system('cls')
 solvedBoard=getSolvedBoard(board)
 printSolutionSteps(solvedBoard)
 
